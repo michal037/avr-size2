@@ -24,6 +24,6 @@ set(SOURCE_FILES
         avrNameList.h
 
         # Windows .exe resource - Optional
-        windows/exe.rc
+        # windows/exe.rc
         )
 add_executable(avr-size2 ${SOURCE_FILES})
