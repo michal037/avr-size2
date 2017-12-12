@@ -6,6 +6,7 @@
 ## *Features*
 * Customizable output function
 * Memory overflow indicator
+* Without specifying the device name
 * Plugin ready
 * Easy and Simple
 
