@@ -238,19 +238,28 @@ void printHelp(void)
  *
  * Parameters:
  *   OUTPUT: result - Pointer to result string.
- *   INPUT: progPath - String to program.
+ *   INPUT: progPath - String to avr-size2 program.
  *
  */
-void createBinaryDirPath(string *result, constString progPath) ////////////////////////// param name
+void createBinaryDirPath(string *result, constString progPath)
 {
-    /* Copy program path and select directory */
-    *result = safeMalloc(strlen(progPath) + 1);
-    strcpy(*result, progPath);
-    *result = dirname(*result);
+    string temp = NULL;
+
+    /* Copy program path to temp variable and select directory */
+    temp = safeMalloc(strlen(progPath) + 1);
+    temp[0] = '\0';
+    strcpy(temp, progPath);
+    temp[strlen(progPath)] = '\0';
+    temp = dirname(temp);
+
+    /* Copy directory path to output variable */
+    *result = safeMalloc(strlen(temp) + 1);
+    (*result)[0] = '\0';
+    strcpy(*result, temp);
+    (*result)[strlen(temp)] = '\0';
 
     /* Free unused memory */
-    *result = realloc(*result, strlen(*result) + 1);
-    if(*result == NULL) customError("realloc() failed");
+    free(temp);
 } /* createBinaryDirPath */
 
 /*
