@@ -1,15 +1,14 @@
 /*
  * MIT License
- * Copyright (c) from 2017, Michal Kozakiewicz, github.com/michal037
+ * Copyright (c) 2018, Michal Kozakiewicz, github.com/michal037
  *
- * STANDARD C11 - GCC
- *
+ * Standard: GCC-C11
  */
 
 #ifndef _AVRNAMELIST_H
 #define _AVRNAMELIST_H
 
-/* List of AVR devices from http://www.nongnu.org/avr-libc/user-manual/index.html */
+/* The list of avr microcontrollers comes from http://www.nongnu.org/avr-libc/user-manual/index.html */
 
 #define avrNameListSize (251)
 const char * const avrNameList[avrNameListSize] = {

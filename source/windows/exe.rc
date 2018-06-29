@@ -1,9 +1,8 @@
 /*
  * MIT License
- * Copyright (c) from 2017, Michal Kozakiewicz, github.com/michal037
+ * Copyright (c) 2018, Michal Kozakiewicz, github.com/michal037
  *
- * STANDARD C11 - GCC - MINGW32
- *
+ * Standard: GCC-C11
  */
 
 #include <windows.h>

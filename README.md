@@ -1,7 +1,5 @@
 # AVR Size 2
 
-### [Download](https://github.com/michal037/avr-size2/releases)
-
 ## Features
 * Customizable output function.
 * Memory overflow indicator.
@@ -9,7 +7,9 @@
 * Plugin ready.
 
 ## Usage
-**avr-size2** `file` `(optional parameter)`
+```
+avr-size2 file (optional-parameter)
+```
 
 ### Built-in usage for console
 ```
@@ -40,4 +40,4 @@ atmega32a;202;0.6;38;1.9;255;24.9;
 ```
 
 ## License
-This software is licensed under the MIT License. See the [license file](LICENSE) for details.
+This software is licensed under the MIT License. See the [license file](license.txt) for details.

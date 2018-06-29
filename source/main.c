@@ -1,12 +1,10 @@
 /*
  * MIT License
- * Copyright (c) from 2017, Michal Kozakiewicz, github.com/michal037
+ * Copyright (c) 2018, Michal Kozakiewicz, github.com/michal037
  *
- * STANDARD C11 - GCC
- *
+ * Standard: GCC-C11
  */
-
-/* ======================================== INCLUDES */
+ 
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdarg.h>
@@ -15,7 +13,6 @@
 #include <sys/stat.h>
 #include "avrNameList.h"
 
-/* ======================================== DEFINES */
 /* Detect the system */
 #ifdef _WIN32 /* For Windows 32 and 64 bit */
 #define BINARY_PROGRAM_NAME "avr-size2.exe"
@@ -27,14 +24,12 @@
 /* Safe free */
 #define safeFree(p) __safeFree((void**)&(p))
 
-/* ======================================== TYPEDEFS */
 typedef unsigned char uint8;
 typedef signed int int32;
 typedef unsigned int uint32;
 typedef char * string;
 typedef const char * constString;
 
-/* ======================================== FUNCTIONS DECLARATIONS */
 void *safeMalloc(size_t size);
 void __safeFree(void **ptr);
 uint8 checkFile(constString name);
@@ -46,7 +41,6 @@ void setAvrName(constString avrELF);
 void setAvrUsage(constString avrELF);
 void printAvrUsage(uint8 forPlugin);
 
-/* ======================================== GLOBAL VARIABLES */
 string binaryDirPath = NULL; /* Path to program directory */
 string avrName = NULL; /* AVR name */
 struct
@@ -55,7 +49,6 @@ struct
     struct { double flash, sram, eeprom; } percent;
 } avrUsage = {{0, 0, 0}, {0, 0, 0}}; /* AVR usage */
 
-/* ======================================== MAIN */
 int main(const int argc, constString argv[])
 {
     /* Check program inputs */
@@ -87,7 +80,6 @@ int main(const int argc, constString argv[])
     return 0;
 } /* main */
 
-/* ======================================== FUNCTIONS */
 /*
  * safeMalloc()
  *
