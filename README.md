@@ -39,5 +39,8 @@ avr-size2 avr_app.elf plugin
 atmega32a;202;0.6;38;1.9;255;24.9;
 ```
 
+## Reporting issues
+Please feel free to [report issues](https://github.com/michal037/avr-size2/issues).
+
 ## License
 This software is licensed under the MIT License. See the [license file](license.txt) for details.
