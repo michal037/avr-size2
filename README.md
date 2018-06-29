@@ -1,10 +1,10 @@
 # AVR Size 2
 
 ## Features
-* Customizable output function.
-* Memory overflow indicator.
-* Without specifying the device name.
-* Plugin ready.
+* Customizable output function
+* Memory overflow indicator
+* Without specifying the device name
+* Plugin ready
 
 ## Usage
 ```
