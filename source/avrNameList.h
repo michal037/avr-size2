@@ -8,7 +8,7 @@
 #ifndef _AVRNAMELIST_H
 #define _AVRNAMELIST_H
 
-/* The list of avr microcontrollers comes from http://www.nongnu.org/avr-libc/user-manual/index.html */
+/* The list of AVR microcontrollers comes from http://www.nongnu.org/avr-libc/user-manual/index.html */
 
 #define avrNameListSize (251)
 const char * const avrNameList[avrNameListSize] = {
